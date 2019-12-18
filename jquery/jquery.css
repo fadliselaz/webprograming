@@ -1,0 +1,46 @@
+#body{
+    padding: 0px;
+    margin: 0px;
+    transition-duration: 1000ms;
+}
+
+.red, .blue, .yellow{
+    width: 10vw;
+    height: 10vh;
+    
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.brand{
+    margin-right: auto;
+    padding: 0px 10px;
+}

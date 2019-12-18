@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="logoType">
+            <img src="logoType.png" alt="">
+        </div>
+
+        <div class="formLogin">
+
+            <label for="username">username</label>
+            <input type="text" id="username">
+
+            <label for="password">password</label>
+            <input type="password" id="password">
+
+            <label for="email">email</label>
+            <input type="email" id="email">
+
+            <button class="btnLogin" onclick="{register()}">register</button>
+            
+
+        </div>
+
+        <div class="footer">
+            <a href="login2.html">
+                <button class="btnReg">
+                    login
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+
+<script>
+
+    var register = function(){
+        // pertama kita akan menangkap hasil input user
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+        var email = document.getElementById('email').value
+
+        // kedua adalah kita akan store data ke session
+        sessionStorage.setItem('username', `${username}`)
+        sessionStorage.setItem('password',`${password}`)
+        sessionStorage.setItem('email',`${email}`)
+
+        // kita akan coba tarik data dari session
+        // var sesUsr = sessionStorage.getItem('username')
+        // var sesPas = sessionStorage.getItem('password')
+        // var sesEml = sessionStorage.getItem('email')
+
+        alert('username berhasil di tambahkan..')
+
+        //selanjutnya kita akan re direct ke login.html
+        window.location.href = 'login2.html'
+
+    }
+
+</script>
+
+</body>
+</html>

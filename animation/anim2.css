@@ -1,0 +1,73 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 250, 200);
+    height: 100vh;
+}
+
+.header{
+    width: 100vw;
+    height: 15vh;
+
+    border: 2px solid red;
+}
+
+.logoType{
+    height: 15vh;
+    margin-left: 20px;
+
+    border: 2px solid red;
+}
+
+.sepatu{
+    width: 50vw;
+    transform: translate(40%, 50%);
+    border: 2px solid red;
+    transition-duration: 1000ms;
+    animation-name: sepatu;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    z-index: 10;
+}
+
+@keyframes sepatu{
+    from {
+        opacity: 0;
+        transform: translate(40%, -150%);
+        filter: blur(5);
+        
+
+    }
+    to {
+        transform: translate(40%, 50%);
+
+    }
+}
+
+.sepatu:hover{
+    transform: rotateY(180deg);
+    
+}
+
+.sepatu2{
+    width: 70vw;
+    transform: translate(-500px, 100px);
+    border: 2px solid red;
+
+    animation-name: sepatu2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    filter: blur(2px);
+    z-index: -1;
+    opacity: 0.2;
+}
+
+@keyframes sepatu2{
+    from{
+        opacity: 0;
+        transform: translate(-500px, -200px);
+    }
+    to{
+        transform: translate(-500px, 100px);
+    }
+}

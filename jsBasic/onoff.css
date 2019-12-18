@@ -1,0 +1,49 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lamp{
+    width: 25vw;
+    height: 80vh;
+    background-image: url(lampuMati.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    transition: ease;
+    transition-duration: 500ms;
+}
+
+.tombol{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol-nyala{
+    background-color: greenyellow;
+}
+
+.tombol-mati{
+    background-color: red;
+}

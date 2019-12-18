@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h3>selamat datang</h3>
+        <h1 id="textUser"></h1>
+
+    </div>
+
+
+
+<script>
+
+    // kita akan ambil data data dari session
+    var sesUsr = sessionStorage.getItem('username')
+
+    //kita akan ambil element H1 di html
+    var text = document.getElementById('textUser')
+ 
+    //kita INJECT dat adari session ke H1 nya
+    text.innerHTML = sesUsr
+
+</script>
+
+    
+</body>
+</html>

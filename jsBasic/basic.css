@@ -1,0 +1,40 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-size: cover;
+    background-position: center;
+    transition-duration: 200ms;
+}
+
+.box{
+    width: calc(100vw/3);
+    height: 100vh;
+
+    /* border: 1px solid red; */
+}
+
+/* .box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: yellow;
+}
+
+.box3{
+    background-color: blue;
+} */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="value.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>value</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 id="text" >
+            ini akan berubah
+        </h1>
+
+        <p id="par"></p>
+
+        <form action="#">
+            <input type="text" id="kata">
+            <button onclick="{ubah()}">alert</button>
+            <br><br>
+
+            <input type="text" id="kata2">
+            <button onclick="{ubah2()}">click disini</button>
+            <br><br>
+
+            <input type="text" id="kata3">
+            <button onclick="{ubah3()}">click disini</button><br><br>
+
+        </form>
+
+         <div class="container2">
+                <button class="merah">merah</button><br>
+                <button class="biru">biru</button><br>
+                <button class="kuning">kuning</button>
+         </div>
+
+    </div>
+
+    
+
+
+<script>
+
+    
+    var ubah = function(){
+
+        var ip = document.getElementById("kata").value
+        var tx = document.getElementById("text")
+
+        // alert
+        alert(ip)
+    }
+
+    var ubah2 = function(){
+
+        var ip2 = document.getElementById("kata2").value
+        var tx2 = document.getElementById("text")
+
+        tx2.innerHTML = ip2
+        
+    }
+
+    var ubah3 = function(){
+
+        var ip3 = document.getElementById("kata3").value
+        var tx3 = document.getElementById("par")
+
+        tx3.innerHTML = ip3
+        
+    }
+
+
+  
+
+
+
+</script>
+
+
+</body>
+</html>

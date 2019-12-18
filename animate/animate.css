@@ -1,0 +1,44 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 187, 162);
+
+}
+
+
+.box1, .box3{
+    /* border: 2px solid red; */
+    height: 30vh;
+    width: 30%;
+}
+
+.box4{
+    height: 100vh;
+    width: 210px;
+    background-image: url(tengah.jpg);
+    background-position: center;
+    background-size: 210px;
+    background-repeat: no-repeat;
+    transition-duration: 100ms;
+    z-index: 10;
+    position: fixed;
+    /* border: 2px solid red; */
+    background-blend-mode: multiply;
+    background-color: rgb(255, 187, 162);
+
+}
+
+
+
+.box3:hover ~.box4{
+    background-image: url(kanan.jpg);
+}
+
+.box1:hover ~.box4{
+    background-image: url(kiri.jpg);
+}
+

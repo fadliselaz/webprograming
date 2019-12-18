@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="onoff.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fadli</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h5>SELAMAT HARI GURU NASIONAL</h5>
+
+        <div class="lamp" id="lamp">
+        </div>
+
+        <div class="tombol">
+            <div class="tombol-nyala btn" id="nyl" onclick="{nyala()}">on</div>
+            <div class="tombol-mati btn" id="mt" onclick="{mati()}">off</div>
+        </div>
+
+    </div>
+
+
+<script>
+
+    var nyala = function(){
+        var lm = document.getElementById("lamp")
+        var ny = document.getElementById("nyl")
+        var mt = document.getElementById("mt")
+        ny.style.width = "150px"
+        mt.style.width = "50px"
+        lm.style.backgroundImage = "url(lampuNyala.jpg)"
+    }
+
+    var mati = function(){
+        var lm = document.getElementById("lamp")
+        var ny = document.getElementById("nyl")
+        var mt = document.getElementById("mt")
+        ny.style.width = "50px"
+        mt.style.width = "150px"
+        lm.style.backgroundImage = "url(lampuMati.jpg)"
+    }
+
+</script>
+
+</body>
+</html>

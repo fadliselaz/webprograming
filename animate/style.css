@@ -1,0 +1,49 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    /* rata secara horizontal */
+    justify-content: center;
+
+    /* rata secara vertical */
+    align-items: center;
+
+    flex-direction: row;
+    /* background-color: aqua; */
+    /* border: 1px solid red; */
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    /* border: 8px solid red; */
+    /* border-radius: 120%; */
+    
+    border: 8px solid red;
+    border-left: 0px solid white;
+
+    /* border-radius: 360px; */
+   
+}
+
+.box1:hover{
+    animation-name: jello;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+h1{
+    color: orange;
+}

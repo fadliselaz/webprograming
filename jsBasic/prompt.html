@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prompt</title>
+</head>
+<body>
+    
+<h1 style="color: red;" id="title" class="title">
+
+</h1>
+
+<h5 id="title2" style="color: blue">
+
+</h5>
+
+
+<script>
+
+    //membuat deteksi usia
+
+    var tl = prompt("masukan tahun lahir anda : ")
+
+    //tahun saat ini
+    var ts = 2019
+
+    // mengurangi tahun ini dan tahun lahir
+    var usia = ts - tl
+
+    //kita akan menSELECT sebuah element di HTML
+    var tit = document.getElementById("title2")
+   
+    tit.innerHTML = `usia anda adalah : ${usia}` 
+
+</script>
+</body>
+</html>

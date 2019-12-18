@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="basic.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fadli</title>
+</head>
+<body>
+    
+    <div class="container" id="con">
+
+        <div class="box1 box" onmouseover="{box1()}"></div>
+        <div class="box2 box" onmouseover="{box2()}"></div>
+        <div class="box3 box" onmouseover="{box3()}"></div>
+
+
+    </div>
+
+
+
+
+<script>
+
+    var box1 = function(){
+        document.getElementById("con").style.backgroundImage = "url(https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)"
+    }
+
+    var box2 = function(){
+        document.getElementById("con").style.backgroundImage = "url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)"
+    }
+
+    var box3 = function(){
+        document.getElementById("con").style.display = "none"
+    }
+   
+
+</script>
+
+
+</body>
+</html>

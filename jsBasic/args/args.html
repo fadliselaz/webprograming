@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="args.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fadliselaz</title>
+</head>
+<body>
+    
+    <div class="alert" id="alert" >
+
+        <h1>selamat datang</h1>
+        <h2 id="resNama"></h2>
+        
+        <p id="resEmail"></p>
+        <p id="resAlamat"></p>
+
+        <div class="close" onclick="{keluar()}">
+            x
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Form Isian</h1>
+        
+        <form action="#">
+
+            <input type="text" placeholder="masukan nama" id="nama" required>
+            <input type="text" placeholder="masukan alamat" id="alamat" required>
+            <input type="mail" placeholder="masukan email" id="email" required>
+            <button id="submit" onclick="{reg()}">register</button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+<script>    
+
+    var reg = ()=>{
+        // menampung element dari DIV container
+        var nama = document.getElementById("nama").value
+        var alamat = document.getElementById("alamat").value
+        var email = document.getElementById("email").value
+
+        //menmpung element dari DIV Alert
+        var alt = document.getElementById("alert")
+        var resNama = document.getElementById("resNama")
+        var resAlamat = document.getElementById("resAlamat")
+        var resEmail = document.getElementById("resEmail")
+
+        alt.style.display = "flex"
+        resNama.innerHTML = nama
+        resAlamat.innerHTML = alamat
+        resEmail.innerHTML = email
+    }
+
+    var keluar = ()=>{
+        var alt2 = document.getElementById("alert")
+        alt2.style.display = "none"
+    }
+
+
+</script>
+
+</body>
+</html>

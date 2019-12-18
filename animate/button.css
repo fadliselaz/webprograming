@@ -1,0 +1,103 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    transition-duration: 500ms;
+    -moz-transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    transition-duration: 500ms;
+}
+
+
+/* .btn:hover{
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} */
+
+.btn1{
+    background-color: red;
+    color: white;
+
+}
+
+.btn1:hover{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.btn2{
+    background-color: yellow;
+    color: black;
+
+}
+
+.btn2:hover{
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.btn3{
+    background-color: greenyellow;
+    color: black;
+
+}
+
+.btn3:hover{
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.btn4{
+    background-color: cyan;
+    color: black;
+
+}
+
+.btn4:focus{
+    animation-name: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.btn5{
+    background-color: purple;
+    color: white;
+
+}
+.btn5:focus{
+    animation-name: tada;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border: none;
+}
+

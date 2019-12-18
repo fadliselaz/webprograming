@@ -1,0 +1,90 @@
+@media only screen and (max-width: 600px){
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+    img{
+        margin-bottom: 20px;
+        width: 30vw;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+        background-image: url(background.png);
+        background-size: cover;
+
+    }
+
+    .formLogin{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .muteform{
+        width: 320px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.712);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+
+        border-radius: 10px;
+        text-align: left;
+
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    input{
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        text-align: center;
+        font-size: 15px;
+
+    }
+
+    button{
+        height: 50px;
+        background-color: #FFB74B;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .btn-register{
+        
+        margin-top: 10px;
+        width: 30vw;
+        height: 50px;
+        background-color: #85D74F;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+
+
+
+
+
+
+}

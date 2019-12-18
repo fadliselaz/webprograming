@@ -1,0 +1,48 @@
+
+/* ini adalah code untuk mobile first */
+@media only screen and (max-width: 600px){
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-image: url(background.png);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 50vw;
+    }
+
+
+    .logotype{
+        width: 50vw;
+        
+    }
+
+    .footer{
+        height: 10vh;
+    }
+
+
+
+
+
+
+
+/* ini adalah penutup mobile first */
+}
+

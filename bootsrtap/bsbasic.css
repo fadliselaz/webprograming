@@ -1,0 +1,55 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-home, .container-about, .container-gallery, .container-register, .container-contact{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid black;
+}
+
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    color: white;
+    
+}
+
+.alamat, .site-map, .socialMedia{
+    width: calc(100vw/3);
+    height: 100%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.site-map{
+    font-size: 20px;
+}
+
+.navbar{
+    display: flex;  
+}
+.collapse{
+    margin-left: auto;
+}

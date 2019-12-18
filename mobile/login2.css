@@ -1,0 +1,109 @@
+
+@media only screen and (max-width: 600px){
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(background.png);
+        font-family: Roboto;
+
+    }
+
+    img{
+        width: 30vw;
+    }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .logoType{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .formLogin{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: white;
+
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    label{
+        font-size: 20px;
+        margin: 10px;
+
+    }
+    input{
+        width: 285px;
+        height: 59px;
+        border: 1px solid rgb(122, 122, 122);
+        border-radius: 50px;
+        outline: none;
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .btnLogin{
+        width: 285px;
+        height: 59px;
+        background: #FFB74B;
+        border-radius: 50px;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    small{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 8px;
+        text-align: center;
+    }
+
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnReg{
+        width: 131px;
+        height: 33px;
+        background-color: #85D74F;
+        border-radius: 50px;
+    }
+
+
+
+
+
+/* ini adalah akhir dari mobile first */
+}
+

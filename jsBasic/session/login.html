@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <style>
+       
+        small{
+            display:none;
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+            <input type="text" id="username" placeholder="username" >
+            <input type="password" id="password" placeholder="username" >
+            <button onclick="{login()}">login</button>
+            <a href="reg.html">register</a>
+        <small id="error">
+            username atau password salah
+        </small>
+    </div>
+
+<script>
+    
+    var login = ()=>{
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+        var sesUsername = sessionStorage.getItem('username')
+        var sesPassword = sessionStorage.getItem('password')
+
+        if(username == sesUsername && password == sesPassword){
+            window.location.href = 'index.html'
+        }
+        else{
+            document.getElementById('error').style.display = 'flex'
+            document.getElementById('username').style.border = '1px solid red'
+            document.getElementById('password').style.border = '1px solid red'
+            
+            setTimeout(function(){
+                document.getElementById('error').style.display = 'none'
+                document.getElementById('username').style.border = '1px solid gray'
+                document.getElementById('password').style.border = '1px solid gray'
+            },2000)
+                
+        }
+      
+    }
+
+
+</script>
+
+
+</body>
+</html>

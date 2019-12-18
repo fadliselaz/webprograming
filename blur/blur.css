@@ -1,0 +1,31 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    height: 200vh;
+}
+
+.ngakBlur{
+    width: 30vw;
+    height: 15vh;
+    position: fixed;
+    border: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blur{
+    background-image: url("https://images.pexels.com/photos/2387876/pexels-photo-2387876.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    width: 100vw;
+    height: 200vh;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+}

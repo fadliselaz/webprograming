@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>session</title>
+    <script>
+
+            // ini adalah script pengaman jika
+            //user belum LOGIN
+            var sesUsername = sessionStorage.getItem('username')
+            var sesEmail = sessionStorage.getItem('email')
+            if(!sesUsername){
+                window.location.href = 'login.html'
+            }
+
+            
+            
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+           <h1 id="username"></h1>
+           <h4 id="email"></h4>
+           <button onclick="{logout()}">logout</button>
+    </div>
+
+
+
+
+<script>
+    
+    var username = document.getElementById('username')
+    var email = document.getElementById('email')
+    username.innerHTML = `${sesUsername}`
+    email.innerHTML = `${sesEmail}`
+
+    var logout = ()=>{
+        // sessionStorage.setItem('username', '')
+        // sessionStorage.setItem('password', '')
+        // sessionStorage.setItem('email', '')
+        window.location.href = 'login.html'
+    }
+
+        
+</script>
+
+</body>
+</html>

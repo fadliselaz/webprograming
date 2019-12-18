@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h5 id="point"></h5>
+    <h1 id="text"></h1>
+    <!-- <input type="text" id="masukan" required placeholder="masukan tebakan"> -->
+    <input type="text" id="taruhan" placeholder="masukan taruhan" required> <br>
+
+    <div class="con">
+        <button onclick="{rand('anjing')}">anjing</button>
+        <button onclick="{rand('kuda')}">kuda</button>
+        <button onclick="{rand('kambing')}">kambing</button>
+        <button onclick="{rand('babi')}">babi</button>
+    </div>
+    <br>
+    <small id="foot"></small>
+
+
+
+<script>
+    document.cookie = 1000000
+    
+
+    var rand = (x)=>{
+        
+        var tar = parseInt(document.getElementById("taruhan").value)
+        var pts = document.cookie
+        var rd = ["anjing", "kuda", "kambing", "babi"]
+        var has = Math.floor(Math.random() * rd.length)
+        var hasil = rd[has]
+        var tebak = x
+
+
+
+        document.getElementById("text").innerHTML = hasil
+        if(hasil === tebak){
+            var plus = parseInt(pts) + tar
+            document.getElementById("foot").style.color = "green"
+            document.getElementById("foot").innerHTML = "Berhasil"
+            document.getElementById("point").innerHTML = `Point anda : ${plus}`
+            document.cookie = plus
+            alert("selamat anda menang!!")
+        }
+        else if(tar < 5000){
+            document.getElementById("foot").innerHTML = "taruhan minimal 5000"
+        }
+        
+        else{
+            var plus = parseInt(pts) - tar
+            document.getElementById("foot").style.color = "red"
+            document.getElementById("foot").innerHTML = "GAGAL.."
+            document.getElementById("point").innerHTML = `Point anda : ${plus}`
+            document.cookie = plus
+
+
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

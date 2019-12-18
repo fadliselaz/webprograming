@@ -1,0 +1,38 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    background-color: rgb(178, 255, 255);
+    width: 100vw;
+    height: 15vh;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 85vh;
+
+}
+
+.col2{
+    background-color: rgb(252, 255, 205);
+    width: 20vw;
+}
+
+.col3{
+    background-color: rgb(177, 212, 245);
+    width: 80vw;
+}

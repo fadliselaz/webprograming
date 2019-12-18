@@ -1,0 +1,123 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    padding: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(144, 0, 0);
+    color: azure;
+}
+
+.navbar p{
+    margin: 0px auto 20px auto;
+}
+
+.container-row1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200%;
+
+}
+
+.box1{
+  
+    height: 80vh;
+
+    /* ini yang membuat content ada di tengah */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+
+    /* background imaga */
+    background-image: url("https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.box1 .content{
+    width: 70%;;
+}
+.box1 h1{
+    margin: 20px auto;
+    color: white;
+}
+
+.box1 p{
+    color: white;
+}
+
+.box2{
+   
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+   
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90vw;
+    height: 100%;
+}
+
+form input{
+    padding: 20px;
+    margin: 20px 0px;
+    border-style: none;
+    border-radius: 8px;
+}
+
+form .btn{
+    margin: 10px 0px 20px 0px;
+    padding: 20px;
+    border-style: none;
+    border-radius: 20px;
+    background-color:#01D039;
+}
+
+
+.container-row2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+
+}
+
+.box4{
+    border-style: solid;
+    border-color: red;
+    width: 50vw;
+    height: 100%;
+}
+
+.box5{
+    border-style: solid;
+    border-color: red;
+    width: 50vw;
+    height: 100%;
+}

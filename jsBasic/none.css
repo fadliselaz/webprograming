@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    width: 50vw;
+    height: 50vh;
+
+    padding: 80px;
+    box-sizing: border-box;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.513);
+
+    background-color: rgba(255, 255, 0, 0.493);
+}
+
+button{
+    width: 100px;
+    height: 30px;
+}

@@ -1,0 +1,25 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.box{
+    width: calc(100vw/3);
+    height: calc(100vh/3);
+    outline: 1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5{
+    background-image: url(5.jpg);
+    background-position: center;
+}

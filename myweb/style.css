@@ -1,0 +1,79 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(2, 2, 2);
+    width: 100vw;
+    height: 15vh;
+    /* outline: 1px solid red; */
+    position: fixed;
+}
+
+.brand{
+    /* outline: 1px solid green; */
+    width: 20vw;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu{
+    /* outline: 1px solid blue; */
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 50vw;
+    justify-content: space-around;
+    
+}
+
+
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    outline: 1px solid rgb(0, 255, 213);
+    background-image: url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.quotes{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.content-about, .content-gallery, .content-contact{
+    width: 100vw;
+    height: 100vh;
+    outline: 1px solid rgb(255, 166, 0);
+    /* background-color: rgb(245, 255, 199); */
+}
+
+
+

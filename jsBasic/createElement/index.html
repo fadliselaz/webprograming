@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create element
+    </title>
+  
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="textArea" id="textArea">
+            <!-- text akan muncul disini -->
+            <div class="innerText" id="innerText">
+
+            </div>
+        </div>
+
+        <div class="sendArea">
+            <form action="#" class="sendArea" id="sendArea">
+
+                <input type="text" id="text" placeholder="your message" autocomplete="off">
+                <button onclick="{send()}">send</button>
+            </form>
+        </div>
+
+    </div>
+
+<script>
+    var num = 1
+
+    const send = ()=>{
+        var input = document.getElementById('text').value
+        var ct = document.getElementById('innerText')
+        var ta = document.getElementById('textArea')
+        var p = document.createElement('p')
+        var form = document.getElementById('sendArea')
+        if(input===''){
+            input.style.borderColor = 'green'
+        }
+        else{
+            p.setAttribute('id',`${num}`)
+            p.setAttribute('onclick',`{hapus(${num})}`)
+            p.setAttribute('style','font-weight: bold;color: red;font-size:25px;')
+            var dt = new Date()
+            p.innerHTML = `${input}<br><hr><small>${dt}</small>`
+            ct.appendChild(p)
+            form.reset()
+            setTimeout(()=>{
+                p.style.fontWeight = 'normal'
+                p.style.color = 'gray'
+                p.style.fontSize = '20px'
+            },100)
+        }
+        num += 1
+    }
+
+    const hapus = (x)=>{
+        var ids = x
+        // alert(ids)
+        var par = document.getElementById(`${ids}`)
+        par.style.display = 'none'
+        // alert(par)
+    }
+
+</script>
+</body>
+</html>

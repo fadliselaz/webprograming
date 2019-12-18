@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="logoType">
+            <img src="logoType.png" alt="">
+        </div>
+
+        <div class="formLogin">
+
+            <label for="username">username</label>
+            <input type="text" id="username">
+
+            <label for="password">password</label>
+            <input type="password" id="password">
+
+            <button class="btnLogin" onclick="{login()}">login</button>
+
+            <small>
+                <a href="#">Forgot password?</a>
+            </small>
+
+        </div>
+
+        <div class="footer">
+            <a href="register.html">
+                <button class="btnReg">
+                    register
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+<script>
+
+    var login = function(){
+
+        //kita ambil dulu data inputa user
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+
+        // kita akan ambil data data dari session
+        var sesUsr = sessionStorage.getItem('username')
+        var sesPas = sessionStorage.getItem('password')
+
+        //selanjutnya kita akan bandingkan
+        //hasil input user dangan data dari session
+
+        if(username == sesUsr && password == sesPas){
+            alert('berhasil login..')
+            window.location.href = 'home.html'
+        }
+
+        else{
+            alert('username atau password salah..!')
+        }
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.border{
+    width: 300px;
+    height: 300px;
+    border-radius: 0 20% 0  0;
+    background-color: brown;
+    text-align: center;
+    /* border: 10px solid rgb(73, 73, 73); */
+
+    background-image: url(https://images.pexels.com/photos/2974657/pexels-photo-2974657.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+
+    background-size: cover;
+    transition-duration: 500ms;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
+
+}
+
+.border:hover{
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.459);
+}
+
+.border h3{
+    margin-top: 50px;
+}

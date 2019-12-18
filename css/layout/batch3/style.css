@@ -1,0 +1,35 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+
+    /* ini adalah display flex */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.container{
+
+    width: 70vw;
+    height: 50vh;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.box{
+    width: 20%;
+    height: 80%;
+    border: 1px solid blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}

@@ -1,0 +1,74 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+}
+
+.buttonGroup{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+
+}
+
+.btn{
+    height: 20vh;
+    width: 20vw;
+}
+
+.btn1{
+    background-image: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+.btn2{
+    background-image: url("https://images.pexels.com/photos/63285/pig-alp-rona-furna-sow-63285.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.btn3{
+    background-image: url("https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.btn4{
+    background-image: url("https://images.pexels.com/photos/59821/lamb-spring-nature-animal-59821.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+
+    background-position: center;
+    background-size: cover;
+}
+
+div #result{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: 3px solid green;
+    transition: ease-in-out;
+    transition-duration: 3000ms;
+}

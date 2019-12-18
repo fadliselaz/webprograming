@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+    border-bottom: 5px solid rgb(255, 230, 0);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+}
+
+.navbar .brand{
+    width: 30%;
+    height: 100%;
+    /* outline: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding: 50px;
+    /* outline: 2px solid yellow; */
+    width: 40%;
+    justify-content: space-around;
+}
+
+
+.hero{
+    /* padding-top: 15vh; */
+    background-image: url(https://images.pexels.com/photos/52576/pexels-photo-52576.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.hero h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 220px;
+    color: rgb(255, 230, 0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+    position: inherit;
+}
+
+
+
+
+.gallery{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 0;
+}
+
+.container1{
+    width: 30%;
+    height: 100vh;
+    /* outline: 2px solid magenta; */
+    direction: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 230, 0);
+
+}
+
+.container1 .galText, h3{
+    padding: 20px 50px;
+
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* outline: 2px solid blueviolet; */
+    height: 100vh;
+    width: 70vw;
+    margin-left: auto;
+    background-color: rgb(255, 230, 0);
+}
+
+.box1, .box2, .box3, .box4{
+    width: 50%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.box1{
+    background-image: url(https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+.box2{
+    background-image: url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+.box3{
+    background-image: url(https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+.box4{
+    background-image: url(https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pakong.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pakong</title>
+</head>
+<body>
+    
+    <div class="container">
+                <h4 id="hasil">
+                    selamat datang di pakong online..
+                </h4>
+            
+                <div id="result">?</div>
+            
+                <h3>silakan pilih binatangnya</h3>
+                
+                <div class="buttonGroup">
+                        <button class="btn1 btn" onclick="{pk('anjing')}">anjing</button>
+                        <button class="btn2 btn" onclick="{pk('babi')}">babi</button>
+                        <button class="btn3 btn" onclick="{pk('kuda')}">kuda</button>
+                        <button class="btn4 btn" onclick="{pk('kambing')}">kambing</button>
+                </div>
+                
+    </div>
+
+
+
+<script>
+
+    var pk = function(arr){
+
+        // array berisi hasil komputer
+        var binatang = ["anjing", "babi", "kambing", "kuda"]
+
+        //logic dari random
+        var rd = Math.floor(Math.random() * binatang.length)
+
+        //ini adalah result dari hasil komputer
+        var res = binatang[rd]
+
+        //kita mendapatkan element untuk input hasil
+        var txt = document.getElementById("hasil")
+
+        //penampung div result
+        var divResult = document.getElementById("result")
+
+        //memasukan hasil ke text h1
+        txt.innerHTML = res
+
+        var gambar
+        if(res == "babi"){
+                gambar = "https://images.pexels.com/photos/63285/pig-alp-rona-furna-sow-63285.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            else if(res == "anjing"){
+                gambar = "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            }
+            else if(res == "kuda"){
+                gambar = "https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            else if(res == "kambing"){
+                gambar = "https://images.pexels.com/photos/59821/lamb-spring-nature-animal-59821.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            }
+
+
+        if(res === arr){
+            
+
+            divResult.innerHTML = "<h1>KAMU MENANG</h1>"
+            divResult.style.backgroundImage = `url(${gambar})`
+            divResult.style.backgroundSize = `cover`
+            divResult.style.color = "green"
+
+            document.body.style.backgroundColor = "green"
+            setTimeout(function(){
+                location.reload()
+            },3000)
+        }
+        else{
+            
+            
+            divResult.innerHTML = "<h1>KAMU KALAH</h1>"
+            divResult.style.color = "red"
+            divResult.style.backgroundImage = `url(${gambar})`
+            divResult.style.backgroundSize = `cover`
+            document.body.style.backgroundColor = "red"
+            setTimeout(function(){
+                location.reload()
+            },3000)
+        }
+
+    }
+
+
+</script> 
+</body>
+</html>

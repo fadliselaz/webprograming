@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    font-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    transition: top 0.5s;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 15vh;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 15vh;
+    margin-left: auto;
+}
+
+.menuitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 15vh;
+    font-size: 8px;
+}
+
+
+.con{
+    width: 100vw;
+    height: 100vh;
+    outline: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+
+
+/* ini untuk tampilan handphone */
+@media only screen and (max-width: 450px){
+
+    body{
+        background-color: bisque;
+    }
+
+    .navbar{
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+    }
+
+    .brand{
+        width: 100vw;
+    }
+
+    .menu{
+        width: 100vw;
+        height: 10vh;
+        background-color: rgb(80, 80, 80);
+        
+    }
+
+    .menuitem{
+        height: 10vh;
+        color: white;
+    }
+
+
+
+
+
+}

@@ -1,0 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+    
+    transition-duration: 500ms;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    width: 25vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+}

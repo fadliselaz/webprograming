@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.con{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.carousel-item{
+    width: 100vw;
+    height: 100vh;
+   
+    
+}
+
+.carousel-item h1{
+    z-index: 30;
+    position: absolute;
+}
+
+.navbar{
+    width: 100vw;
+    position: fixed;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.navbar .collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.conCard{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 20;
+    overflow: scroll;
+
+    
+}
+
+.card{
+    width: calc(80vw/3);
+    height: auto;
+}
+
+.over1, .over2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+/* section about */
+.about-content{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+
+
+.col, .col2{
+    box-sizing: border-box;
+    padding: 50px;
+    width: 50vw;
+    height: 90vh;
+    /* border: 1px solid red; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.col2{
+    box-sizing: border-box;
+    background-image: url(https://i.guim.co.uk/img/media/842831fcf3677820bc7a618097f92c64e1a0e623/0_195_5842_3505/master/5842.jpg?width=620&quality=85&auto=format&fit=max&s=fd7cb0a8aec961ec7a92688c5558625b);
+    background-size: cover;
+}
+

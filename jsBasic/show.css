@@ -1,0 +1,55 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btn2{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(16, 180, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hide{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.box{
+    width: 60%;
+    height: 70%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

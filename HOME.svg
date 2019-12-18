@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="47" viewBox="0 0 119 47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 40px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+    </style>
+  </defs>
+  <text id="HOME" class="cls-1" transform="translate(0 38)"><tspan x="0" y="0">HOME</tspan></text>
+</svg>

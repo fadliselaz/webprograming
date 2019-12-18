@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="logoType.png" alt="">
+
+        <div class="formLogin" id="formLogin">
+
+            <div class='muteform'>
+
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+
+                <button type='submit' class="btn-login" onclick="{auth()}">Login</button>
+                <small id="smallText">forgot password?</small>
+
+            </div>
+
+            <button class="btn-register">register</button>
+
+        </div>
+
+
+    </div>
+
+
+<script>
+    var ck = 1
+    
+    var auth = ()=>{
+
+        // deklarasi variable
+        var username = 'fadliselaz'
+        var password = '12345678'
+        var ipUsername = document.getElementById('username').value
+        var ipPassword = document.getElementById('password').value
+        
+
+        if(ck === 5){
+            alert('kesempatan anda sudah habis')
+            document.getElementById('formLogin').style.display = 'none'
+            // console.log('kesempatan sudah habis');
+            
+        }
+
+        else if(username == ipUsername && password == ipPassword){
+            window.location.href = 'homepage.html'
+        }
+        else{
+            var smtext = document.getElementById('smallText')
+            smtext.style.color = 'red'
+            smtext.innerHTML = `username atau password salah, <br>percobaan : ${ck} kali` 
+            ck += 1
+            console.log(ck);
+            
+            
+            
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>

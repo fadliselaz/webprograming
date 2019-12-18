@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cookie</title>
+</head>
+<body>
+    
+    <h1 id="text"></h1>
+
+    <input type="text" id='text'>
+    <button onclick="{setCok()}">setcookie</button>
+
+
+<script>
+    document.cookie = ''
+    var setCok = ()=>{
+
+        var ip = document.getElementById('text').value
+        // membnuat cookie
+        document.cookie = `username=${ip};password=fadliselaz13`
+        var ck = document.cookie
+        ck = ck.split(';')
+        var us = ck[0].split('=')
+        console.log(us[1]);
+        document.getElementById('text').innerHTML = us[1]
+    }   
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setTimeOut</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #loadFinish{
+            display: none;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="loading">loading please wait...</h1>
+
+
+<script>
+    //fungsi setTimeout akan menunggu sampai waktu habis, baru akan
+    //menjalankan fungsinya
+    // setTimeout(function(){
+    //     var ld = document.getElementById('loading')
+    //     var ldf = document.getElementById('loadFinish')
+    //     ld.style.display = 'none'
+    //     ldf.style.display = 'flex'
+    // },3000)
+
+    var show = ()=>{
+        var ld = document.getElementById('loading')
+        var ldf = document.getElementById('loadFinish')
+        ld.innerHTML = 'loading'
+    }
+
+    var hide = ()=>{
+        var ld = document.getElementById('loading')
+        var ldf = document.getElementById('loadFinish')
+        ld.innerHTML = 'loading.' 
+     
+    }
+
+    var show2 = ()=>{
+        var ld = document.getElementById('loading')
+        var ldf = document.getElementById('loadFinish')
+        ld.innerHTML = 'loading..' 
+     
+    }
+
+    setInterval(show, 500)
+    setInterval(hide, 1000)
+    setInterval(show2, 1500)
+    
+
+
+
+
+</script>
+</body>
+</html>

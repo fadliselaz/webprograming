@@ -1,0 +1,32 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+
+
+.kiri{
+    border-style: solid;
+    border-color: red;
+    width: 70%;
+    height: 100vh;
+}
+
+
+.kanan{
+    display: flex;
+    border-style: solid;
+    border-color: red;
+    width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    padding: 20px;
+    width: 50%;
+    border-style: solid;
+    border-color: red;
+}

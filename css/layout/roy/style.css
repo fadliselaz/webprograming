@@ -1,0 +1,144 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row1, .row2, .row3{
+    width: 100vw;
+    height: calc(100vh/3);
+    display: flex;
+    /* border: 1px solid red; */
+    background-position: center;
+} 
+
+.box1, .box2, .box3{
+    width: calc(100vw/3);
+    height: 100%;
+    /* border: 1px solid red; */
+    background-position: center;
+
+}
+
+.box4, .box5{
+    width: 50vw;
+    height: 100%;
+    /* border: 1px solid red; */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+
+}
+
+.box6, .box7, .box8, .box9{
+    width: 25vw;
+    height: 100%;
+    /* border: 1px solid red; */
+    background-position: center;
+
+}
+
+.box1{
+    background-image: url(https://images.pexels.com/photos/2365465/pexels-photo-2365465.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box2{
+    background-image: url(https://images.pexels.com/photos/3367460/pexels-photo-3367460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box3{
+    background-image: url(https://images.pexels.com/photos/3351676/pexels-photo-3351676.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box4{
+    background-image: url(https://images.pexels.com/photos/3337210/pexels-photo-3337210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box5{
+    background-image: url(https://images.pexels.com/photos/3361704/pexels-photo-3361704.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box6{
+    background-image: url(https://images.pexels.com/photos/3317193/pexels-photo-3317193.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box7{
+    background-image: url(https://images.pexels.com/photos/3355161/pexels-photo-3355161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box8{
+    background-image: url(https://images.pexels.com/photos/3249431/pexels-photo-3249431.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box9{
+    background-image: url(https://images.pexels.com/photos/3350141/pexels-photo-3350141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+
+.box{
+    transition-duration: 1000ms;
+
+}
+
+.box:hover{
+    width:70vw;
+}
+
+
+/* css mobile kita dimulai disini */
+@media only screen and (max-width: 600px){
+
+    body{
+        height: auto;
+    }
+
+    .container{
+        height: auto;
+    }
+
+    .row1, .row2, .row3{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .box{
+        width: 100vh;
+        height: 50vh;
+    }
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>regiter</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <input type="email" id="email" placeholder="email">
+        <button id="submit" onclick="{reg()}">register</button>
+    </div>
+
+
+<script>
+    const reg = ()=>{
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+        var email = document.getElementById('email').value
+
+        if(!username || !password || !email){
+            alert('harap masukan dengan lengkap!')
+        }else{
+            sessionStorage.setItem('username', `${username}`)
+            sessionStorage.setItem('password', `${password}`)
+            sessionStorage.setItem('email', `${email}`)
+            window.location.href = 'login.html'
+        }
+    }
+
+</script>
+
+</body>
+</html>

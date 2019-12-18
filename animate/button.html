@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- cdn css animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- lokal css -->
+    <link rel="stylesheet" href="button.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fadli</title>
+</head>
+<body id="bdy">
+    
+
+    <div class="container">
+
+        <button class="btn1 btn" onmouseover="{btn1()}"> 
+            bounce
+        </button>
+
+        <button class="btn2 btn" onmouseover="{btn2()}">
+            flash
+        </button>
+
+        <button class="btn3 btn" onmousemove="{btn3()}">
+            pulse
+        </button>
+
+        <button class="btn4 btn">
+            rubberBand
+        </button>
+
+        <button class="btn5 btn">
+            tada
+        </button>
+
+    </div>
+
+
+<script>
+
+
+    var btn1 = ()=> {
+        document.getElementById("bdy").style.backgroundImage = "url(https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)"
+    }
+
+    var btn2 = ()=> {
+        document.getElementById("bdy").style.backgroundImage = "url(https://images.pexels.com/photos/2765872/pexels-photo-2765872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"
+    }
+
+    var btn3 = function(){
+        document.getElementById("bdy").style.backgroundImage = "none"
+        document.getElementById("bdy").style.backgroundColor = "green"
+    }
+    
+
+
+</script>
+
+
+
+</body>
+</html>

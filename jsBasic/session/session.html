@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>session 2</title>
+</head>
+<body>
+    
+    <h1 id="text"></h1>
+    <button onclick="{delSes()}">rem session</button>
+
+<script>
+    
+    var ses = sessionStorage.getItem('username')
+    var ti = document.getElementById('text')
+    ti.innerHTML = ses
+
+    alert(`wellcome ${ses}`)
+
+    var delSes = ()=>{
+        
+        sessionStorage.setItem('userInput','')
+        var ses = sessionStorage.getItem('userInput')
+        var ti = document.getElementById('text')
+        ti.innerHTML = ses
+        
+    }
+</script>
+</body>
+</html>
