@@ -13,6 +13,7 @@
 
         <h3>selamat datang</h3>
         <h1 id="textUser"></h1>
+        <h3 id='textEmail'></h3>
 
     </div>
 
@@ -22,12 +23,15 @@
 
     // kita akan ambil data data dari session
     var sesUsr = sessionStorage.getItem('username')
-
+    var sesEmail = sessionStorage.getItem('email')
+    
     //kita akan ambil element H1 di html
     var text = document.getElementById('textUser')
+    var email = document.getElementById('textEmail')
  
-    //kita INJECT dat adari session ke H1 nya
+    //kita INJECT data adari session ke H1 nya
     text.innerHTML = sesUsr
+    email.innerHTML = sesEmail
 
 </script>
 
