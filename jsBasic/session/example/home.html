@@ -8,28 +8,44 @@
     <style>
         body{
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
     
-    
     </style>
 </head>
 <body>
     
-    <h4>hasil tangkapan session adalah</h4>
-    <h1 id="text"></h1>
 
+    <div class="container">
 
+        <h1 id="textUser"></h1>
+        <h3 id="textPass"></h3>
+        <h5 id="textEmail"></h5>
 
+        <a href="profile.html">profile</a>
+    </div>
 
 <script>
-    var tangkap = sessionStorage.getItem('inputUser')
-    var txt = document.getElementById('text')
-    txt.innerHTML = tangkap
+
+    //kita buat variable penangkap data sessionnya
+    var username = sessionStorage.getItem("sesUser")
+    var password = sessionStorage.getItem("sesPass")
+    var email = sessionStorage.getItem("sesEmail")
+
+    //kita ambil element yang akan di inject dengan DATA dari SESSION
+    var textUser = document.getElementById('textUser')
+    var textPass = document.getElementById('textPass')
+    var textEmail = document.getElementById('textEmail')
+
+    //kita akan inject dat Dari SESSION ke Element diatas
+    textUser.innerHTML = username
+    textPass.innerHTML = password
+    textEmail.innerHTML = email
 
 </script>
+
+
 </body>
 </html>

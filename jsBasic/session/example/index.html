@@ -4,29 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>session</title>
+    <title>register</title>
     <style>
+        
         body{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: beige;
         }
     
+        .form{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        button{
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     
-    <div class="con">
 
-        <h1 id="text"></h1>
-        <input type="text" id="input">
-        <button onclick="{save()}">save session</button>
+    <div class="form">
+        
+        <label for="username">username</label>
+        <input type="text" placeholder="masukan username" id="username">
+        
+        <label for="password">password</label>
+        <input type="password" placeholder="masukan password anda" id="password">
+
+        <label for="email">email</label>
+        <input type="email" placeholder="masukan email anda" id="email">
+
+        <button onclick="{reg()}">register</button>
+
     </div>
 
+    
 
+<script>
+    var rg = 'ical'
+    var reg = function(){
 
-<script src="main.js"></script>
+        // kita akan menggambil data dari inputan user
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+        var email = document.getElementById('email').value
+
+        // alert(username +" "+ password +" "+ email)
+        //kita akan store data input dari user
+        //ke session storage
+        sessionStorage.setItem('sesUser', username)
+        sessionStorage.setItem('sesPass', password)
+        sessionStorage.setItem('sesEmail', email)
+
+        window.location.href = "home.html"
+
+    }
+
+</script>
+
 
 
 </body>

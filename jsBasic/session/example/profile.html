@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>profile</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+
+        }
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <small>username</small>
+        <h3 id="textUser"></h3>
+        <hr>
+
+        <small>password</small>
+        <h3 id="textPass"></h3>
+        <hr>
+
+        <small>email</small>
+        <h3 id="textEmail"></h3>
+        <hr>
+
+        <a href="home.html">back to home</a>
+    </div>
+
+
+
+    <script>
+
+        //kita buat variable penangkap data sessionnya
+        var username = sessionStorage.getItem("sesUser")
+        var password = sessionStorage.getItem("sesPass")
+        var email = sessionStorage.getItem("sesEmail")
+    
+        //kita ambil element yang akan di inject dengan DATA dari SESSION
+        var textUser = document.getElementById('textUser')
+        var textPass = document.getElementById('textPass')
+        var textEmail = document.getElementById('textEmail')
+    
+        //kita akan inject dat Dari SESSION ke Element diatas
+        textUser.innerHTML = username
+        textPass.innerHTML = password
+        textEmail.innerHTML = email
+    
+    </script>
+
+
+
+
+</body>
+</html>
