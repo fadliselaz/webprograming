@@ -5,68 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>variable</title>
-    <style>
-        
-        body{
-            padding: 0px;
-            margin: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url(https://images.pexels.com/photos/1624958/pexels-photo-1624958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-            background-size: cover;
 
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: rgb(88, 88, 88);
-        }
-
-        form{
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(255, 212, 242, 0.918);
-            padding: 20px;
-        }
-
-        input{  
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: none;
-            height: 20px;
-        }
-
-        button{
-            margin-bottom: 10px;
-            border: none;
-            height: 20px;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
     
-    <form action="">
+    <h1 id="judul">ini judul</h1>
+    <button onclick="{tekan()}">tekan saya</button>
+    <button onclick="{push()}">push saya</button>
+    <button onclick="{injak()}">injak saya</button>
 
-        <label for="username">username</label>
-        <input type="text" id="username">
+<script>
 
-        <label for="email">email</label>
-        <input type="email" id="email">
+    // sebuah function atau perintah
+    function tekan(){
+        // alert('tombol di tekan..')
+        document.body.style.backgroundColor = 'yellow'
 
-        <label for="wa">whatsapp</label>
-        <input type="text">
+    }
 
-        <button type="submit" id="submit">masukan data</button>
-        <button type="reset" id="reset">reset</button>
+    // cara ke dua kita meletakan 
+    //fucntion ke dalam variable..
+    var push = function(){
+        // alert('push...')
+        document.body.style.backgroundColor = 'red'
 
-    </form>
+    }
+    
+    // car aES6
+    var injak = ()=>{
+        // alert("di injak")
+        document.body.style.backgroundColor = 'green'
+
+    }
 
 
-
-
-<script src="main.js"></script>
-
-
-
+</script>
 </body>
 </html>

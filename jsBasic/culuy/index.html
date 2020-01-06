@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Codystar&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text To Decoration</title>
+</head>
+
+<body>
+
+
+    <div class="grafity" id="grafity">
+
+        <div class="close" onclick="{keluar()}">
+            <h3>X</h3>
+        </div>
+
+        <div class="card" id="card">
+
+            <h1 id="grafityText">Grafity</h1>
+
+        </div>
+        <a href="#card" download="image.png">
+
+            <button id="btn-download">download</button>
+        </a>
+
+    </div>
+
+
+    <div class="container">
+
+
+        <h1>Text To Decoration</h1>
+        <small>
+            Tulisalah Namamu dan akan kami jadikan dekorasi.
+        </small>
+
+        <div class="form">
+
+            <input type="text" id="textinput" placeholder="masukan text kamu disini">
+            <button onclick="{submit()}">submit</button>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        var submit = function () {
+
+            var userInput = document.getElementById('textinput').value
+            // alert(userInput)
+
+            var grafity = document.getElementById('grafity')
+            grafity.style.display = 'flex'
+
+            var textGrafity = document.getElementById('grafityText')
+            textGrafity.innerHTML = userInput
+        }
+
+        var keluar = function () {
+            var grafity = document.getElementById('grafity')
+            grafity.style.display = 'none'
+        }
+
+        var download = function () {
+            var card = document.getElementById('card')
+            var bCard = document.getElementById('btn-download')
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

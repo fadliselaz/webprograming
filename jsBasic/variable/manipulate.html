@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>maipulating</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 50vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 50vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin-top: 20px;
+        }
+        .container-fluid{
+            background-color: rgba(0, 0, 0, 0.931);
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .exit{
+            width: 150px;
+            height: 20px;
+            color:white;
+            background-color: red;
+            border: none;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid" id="modal">
+        <button class="exit" onclick="{keluar()}">
+            exit
+        </button>
+    </div>
+    <div class="container">
+
+        <form action="#">
+            <p>kita akan merubah text dibawah ini</p>
+            <h1 id="judul">selamat datang</h1>
+            <input type="text" id="userInput">
+            <button type="reset" onclick="{rubah()}">rubah</button>
+        </form>
+        
+    </div>
+
+
+<script>
+    rubah = ()=>{
+
+        // kita dapatkan element dengan id dari h1
+        text = document.getElementById('judul')
+
+        //kita dapatkan input dari user
+        userInput = document.getElementById('userInput').value
+
+        // alert(userInput)
+
+        //selanjutnya kita injet h1 nya dengan inputan user
+        text.innerHTML = userInput
+
+    }
+
+    keluar = ()=>{
+        var modal = document.getElementById('modal')
+        modal.style.display = 'none'
+    }
+
+</script>
+
+
+</body>
+</html>

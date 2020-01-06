@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>class</title>
+</head>
+
+<body>
+
+
+    <h3 id="name"></h3>
+    <small id="email"></small><br>
+    <small id="wa"></small><br>
+
+    <button onclick="{cetak()}">tampilkan</button>
+
+    <script>
+
+        class Murid {
+            constructor(name, email, wa) {
+                this.name = name
+                this.email = email
+                this.wa = wa
+                this.state = {
+                    'name': this.name,
+                    'email': this.email,
+                    'wa': this.wa
+                }
+            }
+
+            pr() {
+                var nm = document.getElementById('name')
+                var em = document.getElementById('email')
+                var wn = document.getElementById('wa')
+
+                nm.innerHTML = this.state.name
+                em.innerHTML = this.state.email
+                wn.innerHTML = this.state.wa
+            }
+
+
+        }
+
+        var cetak = () => {
+            var siswa = new Murid('fadli', 'fadliselaz@gmail.com', '099766667')
+            siswa.pr()
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

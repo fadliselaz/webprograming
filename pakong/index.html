@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pakong Online</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="kotak">
+            <h1 id="hasil">Selamat datang</h1>
+        </div>
+
+        <div class="isian">
+            <button onclick="{submit('kambing')}">Kambing</button>
+            <button onclick="{submit('ayam')}">Ayam</button>
+            <button onclick="{submit('babi')}">Babi</button>
+            <button onclick="{submit('anjing')}">Anjing</button>
+
+        </div>
+
+    </div>
+
+
+<script>
+
+    var submit = function(x){
+        // alert(x)
+        var hasil = document.getElementById('hasil')
+        var binatang = ['kambing', 'ayam', 'babi', 'anjing']
+
+        var rd = Math.floor(Math.random() * 4)
+        var hasilBinatang = binatang[rd]
+        
+        hasil.innerHTML = hasilBinatang
+
+        if(hasilBinatang == x){
+            setTimeout(function(){
+                alert('selamat anda bener..!!')
+            }, 1000)
+            
+        }
+        else{
+            setTimeout(function(){
+                alert('anda salah ... ')
+            }, 1000)
+        }
+        
+
+    }
+
+
+</script>
+
+</body>
+</html>

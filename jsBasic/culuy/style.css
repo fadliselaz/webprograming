@@ -1,0 +1,85 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Codystar', cursive;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input{
+    width: 30vw;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    text-align: center;
+    outline: none;
+
+}
+
+button{
+    width: 30vw;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    margin-top: 10px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+
+/* ini adalah hasil editannya */
+
+
+.grafity{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.808);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+h3{
+    color: red;
+}
+
+#btn-download{
+    width: 10vw;
+    margin-top: 20px;
+    background-color: gold;
+    color: black;
+}

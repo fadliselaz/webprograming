@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user login deh</title>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="form">
+
+            <input type="text" placeholder="username" id="username">
+            <input type="password" placeholder="password" id="password">
+            <button onclick="{login()}">login</button>
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var username = 'jvalley'
+        var password = 'jvalley2019'
+
+        var login = function () {
+            var ipUsername = document.getElementById('username').value
+            var ipPassword = document.getElementById('password').value
+            // alert(ipUsername + " " + ipPassword)
+            if (ipUsername == username && ipPassword == password) {
+                alert('selamat datang..')
+                window.location.href = 'https://facebook.com/selazfadli'
+            } else {
+                alert('USERNAME ATAU PASSWORD SALAH..!')
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
