@@ -1,0 +1,40 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.img{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover !important;
+}
+
+.img1{
+    background-image: url(https://images.pexels.com/photos/45848/kumamoto-japan-aso-cloud-45848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.img2{
+    background-image: url(https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.img3{
+    background-image: url(https://images.pexels.com/photos/67101/pexels-photo-67101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.textCar{
+    width: 100vw;
+    height: 100vh;
+    z-index: 100 !important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCar p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

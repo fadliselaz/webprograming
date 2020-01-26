@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 30vw;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: ghostwhite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+
+            <h1>DISCO</h1>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+
+        setInterval(function () {
+            var bdy = document.body
+            bdy.style.backgroundImage = "url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
+            bdy.style.backgroundSize = 'cover'
+
+            setTimeout(function () {
+                bdy.style.backgroundImage = "url(https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
+                bdy.style.backgroundSize = 'cover'
+                bdy.style.transition = 'dissolve'
+
+            }, 1000)
+
+            setTimeout(function () {
+                bdy.style.backgroundImage = "url(https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
+            }, 2000)
+
+        }, 3000)
+
+    </script>
+</body>
+
+</html>

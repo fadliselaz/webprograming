@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>response</title>
+    <style>
+        .con {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .row {
+            justify-content: center;
+            width: 100vw;
+        }
+
+        .card {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid con">
+        <div class="row" id="text">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        // fetch dari API laravel port 8000
+        fetch('http://127.0.0.1:8000/api/siswa').then(function (response) {
+            // The API call was successful!
+            return response.json();
+        }).then(function (data) {
+            // This is the JSON from our response
+            var elem = ''
+            data.forEach(function (e) {
+                elem += `
+     
+                    <div class="card-body col-md-3 card" key="${e.id}">
+                        <h5 class="card-title">${e.nama}</h5>
+                        <p class="card-text">${e.alamat}</p>
+                    </div>
+                    
+                `
+            })
+            var text = document.getElementById('text')
+            text.innerHTML = elem
+            console.log(data);
+
+        }).catch(function (err) {
+            // There was an error
+            console.warn('Something went wrong.', err);
+
+        });
+
+        setInterval(function () {
+            window.location.reload()
+        }, 1000)
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

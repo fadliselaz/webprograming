@@ -1,0 +1,114 @@
+
+$color: (
+    primary: orange,
+    secondary: yellow,
+    accent: white,
+    black: rgb(53, 53, 53),
+    light-primary: lighten(orange, 40%),
+
+);
+
+@function color($x){
+    @return map-get($color, $x);
+}
+
+$image: (
+    bank1: 'https://images.pexels.com/photos/1162643/pexels-photo-1162643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    bank2: 'https://images.pexels.com/photos/273786/pexels-photo-273786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    bank3: 'https://images.pexels.com/photos/1209521/pexels-photo-1209521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+);
+
+@function image($y){
+    @return map-get($image, $y);
+}
+
+.flexLayout-100{
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(image(bank2));
+    background-size: cover;
+    font-family: 'Bebas Neue';
+
+
+}
+.container-login{
+    @extend .flexLayout-100;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    z-index: 11;
+
+    .loginArea{
+        width: 28vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.600);
+        margin-left: auto;
+        @extend .flexLayout-100;
+        flex-direction: column;
+
+        form{
+            @extend .flexLayout-100;
+            flex-direction: column;
+            width: 100%;
+            input{
+                width: 80%;
+                height: 2em;
+                padding: 10px;
+                border: none;
+                margin: 3% 0;
+            }
+
+         
+
+
+        }
+    }
+}
+.container{
+    @extend .flexLayout-100;
+
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-image: url(https://images.pexels.com/photos/122458/pexels-photo-122458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+    transition-delay: 500ms;
+    overflow: hidden;
+    h1{
+        font-size: 15em;
+        font-kerning: 10px;
+        text-align: center;
+    }
+
+}
+
+
+
+.navbar{
+
+    height: 10vh;
+    width: 20vw;
+    background-color: color(primary);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    .brand{
+        font-size: 2em;
+        padding: 0px;
+    }
+}

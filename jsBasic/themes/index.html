@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Themes</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .judul {
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            height: 70vh;
+        }
+
+        .contentImage {
+            background-image: url(https://images.pexels.com/photos/3420044/pexels-photo-3420044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .contentText {
+            padding: 0px 40px;
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <a class="navbar-brand">THEMES</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <span class="nav-link" onclick="{gelap()}">
+                        <i class="fa fa-moon"></i>
+                    </span>
+                </li>
+                <li class="nav-item active">
+                    <span class="nav-link" onclick="{terang()}">
+                        <i class="fa fa-sun"></i>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ini adalah content -->
+    <div class="container">
+
+        <div class="row">
+
+
+
+            <div class="col-md-6 content contentImage">
+                <div class="image"></div>
+            </div>
+
+            <div class="col-md-6 content contentText">
+                <h3 style="text-align: left;"> you are awesome..</h3>
+                <hr style="border: 0.5px solid red; width: 100%;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi distinctio in, facilis excepturi
+                    cupiditate ad corrupti eius recusandae totam, deserunt, delectus error alias at explicabo animi!
+                    Porro odio veritatis quasi?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ex autem dicta earum, enim
+                    consequatur officia possimus atque ducimus explicabo incidunt odio aut voluptatum corrupti quasi
+                    illo tempora amet omnis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam porro iste sit suscipit dicta,
+                    eveniet amet et beatae quas delectus, omnis ipsam. Necessitatibus ducimus laborum unde repellat, cum
+                    eius quos?
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- script unutuk mengganti temanya.. -->
+    <script>
+
+        var gelap = function () {
+            var bdy = document.body
+            bdy.style.backgroundColor = 'black'
+            bdy.style.color = 'white'
+
+            var nav = document.getElementById('navbar')
+            nav.setAttribute('class', 'navbar navbar-expand-lg navbar-dark bg-black fixed-top')
+        }
+
+        var terang = () => {
+            var bdy = document.body
+            bdy.style.backgroundColor = 'ghostwhite'
+            bdy.style.color = 'black'
+
+            var nav = document.getElementById('navbar')
+            nav.setAttribute('class', 'navbar navbar-expand-lg navbar-light bg-light fixed-top')
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

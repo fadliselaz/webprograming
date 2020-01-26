@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .image {
+            background-image: url(https://images.pexels.com/photos/4941/red-pattern-texture-lines.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-size: cover;
+            height: 100%;
+        }
+
+        .contentText {
+            padding: 40px;
+        }
+
+        .navbar {
+            position: fixed;
+        }
+
+        .imageForm {}
+    </style>
+</head>
+
+<body>
+
+    <!-- navigatin bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <a class="navbar-brand" id="brand">JEMBLONGAN</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <span class="nav-link" onclick="{gelap()}">
+                        <i class="fa fa-moon"></i>
+                    </span>
+                </li>
+                <li class="nav-item active">
+                    <span class="nav-link" onclick="{terang()}">
+                        <i class="fa fa-sun"></i>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- content home -->
+    <div class="container mt-3">
+
+        <div class="row">
+
+            <div class="col-md-6 contentImage">
+                <div class="image"></div>
+            </div>
+
+            <div class="col-md-6 contentText">
+                <h1>
+                    you are awesome..
+                </h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facilis voluptatem saepe minus
+                    ipsam quasi, ducimus voluptates quibusdam sed debitis, amet consequuntur quas? Tenetur optio ipsa
+                    beatae dolores, veritatis iste!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione temporibus maiores aliquid rem
+                    cupiditate fuga, similique in laudantium accusamus recusandae. Soluta cupiditate adipisci sint odit
+                    labore pariatur molestias magnam laborum.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat illum molestiae tenetur,
+                    voluptates suscipit voluptas rem nihil dolores ipsam consequatur. Culpa vel fugiat laborum
+                    voluptates! Quod cupiditate alias nobis minima?
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="imageForm"></div>
+            </div>
+
+            <div class="col-md-6">
+
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf7ahv_stzfugx5GBvYID-jvvAusMCw3ji2r1-T_Pd5i0sMKg/viewform?embedded=true"
+                    width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        var gelap = () => {
+            // kita butuh untuk mengambil komponent
+            var bdy = document.body
+            var nav = document.getElementById('navbar')
+            var brand = document.getElementById('brand')
+
+            // kita ubah CSS / Stylenya
+            bdy.style.backgroundColor = 'black'
+            bdy.style.color = 'white'
+            nav.setAttribute('class', 'navbar navbar-expand-lg navbar-dark bg-black fixed-top')
+            brand.style.color = 'red'
+        }
+
+        var terang = () => {
+            // kita butuh untuk mengambil komponent
+            var bdy = document.body
+            var nav = document.getElementById('navbar')
+            var brand = document.getElementById('brand')
+
+
+            // kita ubah CSS / Stylenya
+            bdy.style.backgroundColor = 'ghostwhite'
+            bdy.style.color = 'black'
+            nav.setAttribute('class', 'navbar navbar-expand-lg navbar-light bg-light fixed-top')
+            brand.style.color = 'black'
+
+        }
+
+
+
+
+
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

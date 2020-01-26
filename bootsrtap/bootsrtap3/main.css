@@ -1,0 +1,50 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.img3{
+    background-image: url(https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.about{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.about-image{
+    background-image: url('img-about.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

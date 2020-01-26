@@ -1,0 +1,50 @@
+html{
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.mainImage{
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+    background-image: url(https://images.pexels.com/photos/1292838/pexels-photo-1292838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.content h1{
+    font-size: 25px;
+}
+
+.row{
+    /* width: 100vw; */
+}
+
+.card{
+    padding: 20px;
+    border-radius: 18px !important;
+}
+
+.content{
+    color: white;
+    margin: 0px 20px;
+}
+
+.form-control{
+    border-radius: 50px !important;
+}
+
+button{
+    border-radius: 50px !important;
+    width: 100% !important;
+}
+
+.contact{
+    height: 30vh;
+}
+
+.contact{
+    height: 30vh !important;
+}

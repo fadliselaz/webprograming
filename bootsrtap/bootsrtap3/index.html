@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>webku</title>
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal LOGIN-->
+    <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form method="get" action="">
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" class="form-control" type="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">password</label>
+                            <input id="password" class="form-control" type="password" name="password">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success">Login</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <small style="color: rgb(167, 167, 167);">copy right jvalley 2019</small>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal REGISTER-->
+    <div class="modal fade" id="registerForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form method="get" action="">
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input id="username" class="form-control" type="username" name="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input id="phone" class="form-control" type="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" class="form-control" type="email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">address</label>
+                            <input id="address" class="form-control" type="address" name="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">password</label>
+                            <input id="password" class="form-control" type="password" name="password">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success">Register</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <small style="color: rgb(167, 167, 167);">copy right jvalley 2019</small>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Webku</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal"
+                    data-target="#loginForm">Login</button>
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="button" data-toggle="modal"
+                    data-target="#registerForm">Register</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <!-- CAROUSEL HOME-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="image img1"></div>
+                <!-- <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="d-block w-100" alt="bg1"> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <div class="image img2"></div>
+
+                <!-- <img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="d-block w-100" alt="..."> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="image img3"></div>
+
+                <!-- <img src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="d-block w-100" alt="..."> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="container-fluid about" id="about">
+
+        <div class="row">
+
+            <!-- container ini mempunyai 7 colom -->
+            <div class="col-md-7 about-left">
+
+                <div class="about-image"></div>
+
+            </div>
+
+            <!-- container ini mempunyai 5 colom -->
+            <div class="col-md-4 about-right">
+
+                <h3>Kami adalah sekolah gratis</h3>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, atque sapiente voluptatem
+                    quisquam suscipit rem repudiandae ipsam dolores dolorum rerum corrupti architecto, deleniti quia
+                    repellendus quo vitae recusandae. Quae, exercitationem?
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum repudiandae repellat tenetur,
+                    doloremque in soluta, atque natus nihil voluptates ut dignissimos deserunt aliquam optio
+                    accusantium? Ad sequi accusantium maiores! Odit.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

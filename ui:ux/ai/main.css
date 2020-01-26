@@ -1,0 +1,130 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* overflow: hidden; */
+    overflow: hidden;
+}
+a .material-icons{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100% !important;
+    height: 20vh;
+    /* border: 1px solid blue; */
+}
+
+svg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.icon{
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    width: 100vw;
+    height: 100px;
+    padding: 5px;
+    pointer-events: none;
+}
+
+.icon .iconGroup{
+    margin-left: auto;
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    pointer-events: all;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    
+    background: linear-gradient(90deg, rgba(255,191,50,1) 0%, rgba(176,112,60,1) 100%);
+
+}
+
+.about{
+    background: linear-gradient(90deg, rgba(50,209,255,1) 0%, rgba(60,138,176,1) 100%);
+
+}
+
+.gallery{
+    color: white;
+    background: linear-gradient(90deg, rgba(194,50,255,1) 0%, rgba(176,60,171,1) 100%);
+
+}
+
+
+
+
+
+
+/* vector  */
+.st0 {
+    fill: #7F7F7F;
+}
+
+.st1 {
+    fill: #494949;
+    color: #FFB600 !important;
+
+}
+
+.st2 {
+    fill: #FFFFFF;
+}
+
+.st3 {
+    font-family: 'Montserrat-Regular';
+}
+
+.st4 {
+    font-size: 40.2701px;
+}
+
+.st5 {
+    fill: #FFB600 !important;
+}
+
+.st5 .menu{
+    text-decoration: none !important;
+    color: #FFB600 !important;
+}
+
+.st6 {
+    font-size: 28.7119px;
+}
+
+.st7 {
+    letter-spacing: 80;
+}
+
+.st8 {
+    letter-spacing: 69;
+}
+
+.st9 {
+    letter-spacing: 68;
+}
+
+.menu{
+    text-decoration: none !important;
+    color: #FFB600 !important;
+}
