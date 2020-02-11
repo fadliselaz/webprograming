@@ -1,0 +1,21 @@
+html, body {
+    background-color: #000;
+    width: 100%;
+    height:100%;
+    margin: 0;
+    /* overflow: hidden; */
+    background-color: black;
+  }
+  
+body{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+
+}
+
+  #bm {
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+  }
