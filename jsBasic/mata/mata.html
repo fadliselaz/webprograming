@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="mata.css">
     <meta charset="UTF-8">
@@ -7,8 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>fadli-mata</title>
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <div class="box1 box" onmouseover="{ganti(1)}">1</div>
@@ -20,19 +22,20 @@
         <div class="box7 box" onmouseover="{ganti(7)}">7</div>
         <div class="box8 box" onmouseover="{ganti(8)}">8</div>
         <div class="box9 box" onmouseover="{ganti(9)}">9</div>
-     
+
     </div>
 
-<script>
+    <script>
 
-    var ganti = (arr)=>{
-        var mainBox = document.getElementById("kotak5")
-        mainBox.style.backgroundImage = `url(${arr}.jpg)`
-    }
+        var ganti = (arr) => {
+            var mainBox = document.getElementById("kotak5")
+            mainBox.style.backgroundImage = `url(${arr}.jpg)`
+        }
 
 
 
-</script>
+    </script>
 
 </body>
+
 </html>

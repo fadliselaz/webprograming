@@ -9,20 +9,17 @@ body{
     width: 100vw;
     height: 15vh;
 
-    border: 2px solid red;
 }
 
 .logoType{
     height: 15vh;
     margin-left: 20px;
 
-    border: 2px solid red;
 }
 
 .sepatu{
     width: 50vw;
     transform: translate(40%, 50%);
-    border: 2px solid red;
     transition-duration: 1000ms;
     animation-name: sepatu;
     animation-duration: 2s;
@@ -52,7 +49,6 @@ body{
 .sepatu2{
     width: 70vw;
     transform: translate(-500px, 100px);
-    border: 2px solid red;
 
     animation-name: sepatu2;
     animation-duration: 3s;

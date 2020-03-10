@@ -1,0 +1,60 @@
+html, body {
+  scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
+}
+
+.konten {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .konten .carousel-control-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .konten .carousel-control-next {
+    display: none;
+  }
+}
+
+.cs-1 {
+  background-image: url("https://images.pexels.com/photos/3662579/pexels-photo-3662579.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cs-2 {
+  background-image: url("https://images.pexels.com/photos/2342502/pexels-photo-2342502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cs-3 {
+  background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=main.css.map */
